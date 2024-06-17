@@ -17,6 +17,7 @@ Este proyecto es una aplicación de búsqueda de alojamientos desarrollada con R
 - CSS
 - Font Awesome
 - Google Fonts
+- Vercel
 
 ## Instalación
 
@@ -36,10 +37,11 @@ $ npm install
 $ npm start
 ```
 ## Uso
-1. Buscar por ciudad: Escribe el nombre de la ciudad en el campo "Add location" y selecciona una de las opciones sugeridas.
-2. Seleccionar número de huéspedes: Haz clic en el campo "Add guests" y ajusta el número de adultos y niños.
-3. Realizar búsqueda: Haz clic en el botón de búsqueda para ver los resultados.
-4. Restablecer búsqueda: Haz clic en el logo para restablecer los filtros y mostrar todos los alojamientos disponibles.
+1. **Buscar por ciudad**: Escribe el nombre de la ciudad en el campo "Add location" y selecciona una de las opciones sugeridas.
+2. **Seleccionar número de huéspedes**: Haz clic en el campo "Add guests" y ajusta el número de adultos y niños.
+3. **Realizar búsqueda**: Haz clic en el botón de búsqueda para ver los resultados.
+4. **Restablecer búsqueda**: Haz clic en el logo para restablecer los filtros y mostrar todos los alojamientos disponibles.
+
 ## Estructura del Proyecto
 ```bash
 ├── public
