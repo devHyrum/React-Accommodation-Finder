@@ -1,6 +1,8 @@
 import React from 'react';
+import './Main.css'
 
 export default function Main({ children, search, data, filteredData, hasSearched }) {
+
   const city = search.fullLocation.split(',')[0].trim();
   const isAllDataShown = data.length === filteredData.length;
 

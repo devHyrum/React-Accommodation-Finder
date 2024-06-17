@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Header from './components/Header';
-import Main from './components/Main';
-import Modal from './components/Modal';
-import MainItem from './components/MainItem';
+import Header from './components/Header/Header';
+import Main from './components/Main/Main';
+import Modal from './components/Modal/Modal';
+import MainItem from './components/Main/MainItem';
 
 function App() {
   const [data, setData] = useState([]);

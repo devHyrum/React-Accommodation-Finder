@@ -1,4 +1,5 @@
 import React from 'react'
+import './Main.css'
 
 export default function MainItem({char:{photo, type, beds, rating, title, superHost}}) {
   return (
