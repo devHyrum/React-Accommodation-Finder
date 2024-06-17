@@ -1,5 +1,6 @@
 # React Accommodation Finder
-
+![alt text](</public/demo/Demostración.gif>)
+## Descripción
 Este proyecto es una aplicación de búsqueda de alojamientos desarrollada con React. Permite a los usuarios buscar alojamientos por ciudad y número de huéspedes, mostrando una lista de resultados compatibles. Si no se encuentran resultados, se muestra un mensaje adecuado.
 
 ## Características
@@ -48,10 +49,9 @@ $ npm start
 │       ├── archivos.svg...
 ├── src
 │   ├── components
-│   │   ├── Header.jsx
-│   │   ├── Main.jsx
-│   │   ├── MainItem.jsx
-│   │   └── Modal.jsx
+│   │   ├── Header
+│   │   ├── Main
+│   │   └── Modal
 │   ├── App.jsx
 │   ├── index.css
 │   └── index.js
