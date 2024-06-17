@@ -13,7 +13,7 @@ function App() {
   const [showModals, setShowModals] = useState(false);
   const [showLocationOptions, setShowLocationOptions] = useState(false);
   const [showGuestOptions, setShowGuestOptions] = useState(false);
-  const [hasSearched, setHasSearched] = useState(false);  // Nuevo estado
+  const [hasSearched, setHasSearched] = useState(false); 
 
   async function getData() {
     const response = await fetch('/data/stays.json');
@@ -40,9 +40,9 @@ function App() {
   }, []);
 
   function handleSearch() {
-    setHasSearched(true);  // Establecer que se ha realizado una búsqueda
-    const city = search.city.split(',')[0].trim(); // Obtener solo la ciudad para la búsqueda
-    const guestNumber = parseInt(search.guests, 10); // Convertir el número de huéspedes a entero
+    setHasSearched(true);  
+    const city = search.city.split(',')[0].trim(); 
+    const guestNumber = parseInt(search.guests, 10);
     const results = data.filter(char => 
       char.city.toLowerCase().includes(city.toLowerCase()) &&
       char.maxGuests >= guestNumber
@@ -58,7 +58,7 @@ function App() {
     setGuests(0);
     setShowLocationOptions(false);
     setShowGuestOptions(false);
-    setHasSearched(false);  // Restablecer el estado de búsqueda
+    setHasSearched(false); 
   }
 
   return (
