@@ -30,6 +30,11 @@ main {
 }
 .smallPicture{
     position: relative;
+    width: auto;
+    img{
+        width: full;
+        height: 9rem;
+    }
 }
 
 .stay-info {
