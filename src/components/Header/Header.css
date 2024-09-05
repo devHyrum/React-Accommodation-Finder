@@ -55,7 +55,7 @@
     width: 41px;
     height: 30px;
 }
-@media (max-width: 375px) {
+@media (max-width: 639px) {
     .header{
         display: flex;
         justify-content: space-between;
