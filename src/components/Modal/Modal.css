@@ -1,31 +1,34 @@
 .modal {
     display: flex; 
-    position: fixed;
-    top: 0px;
-    left: 50%;
+    position: absolute;
+    top: 0;
+    left: 0; /* Garante que o modal comece do lado esquerdo */
     width: 100%;
     height: 100%;
-    transform: translateX(-50%);
-    justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     padding: 20px;
-    gap: 0px;
+    box-sizing: border-box; /* Evita que padding/border afetem a largura total */
 }
-.header-modal{
+
+.header-modal {
     display: flex;
-    position: fixed;
-    top: 0px; 
-    width: 94.2%;
-    height: 45%;
+    position: absolute;
+    top: 0;
+    left: 0; /* Garante alinhamento à esquerda */
+    width: 100%;
+    height: 40%;
     background-color: white;
     justify-content: space-between;
     border-radius: 8px;
     padding: 20px;
+    max-width: 100vw; /* Limita a largura à tela */
+    box-sizing: border-box; /* Garante que o padding não afete a largura */
 }
+
 #location-modal {
     border: solid 1px black;
 }
@@ -145,4 +148,45 @@
 .count-person{
     padding: 0px 15px 0px 15px;
     font-weight: 650;
+}
+
+/* Media query para telas menores */
+@media (max-width: 1024px) {
+    .header-modal{
+        height: 45%;
+    }
+}
+@media (max-width: 768px) {
+    .header-modal{
+        height: 60%;
+    }
+}
+@media (max-width: 640px) {
+    .header-modal{
+        height: 70%;
+    }
+}
+@media (max-width: 375px) {
+    .header-modal{
+        height: 40%;
+        #modalCompleteLocation{
+            width: 35%;
+        }
+        #modalCompleteGuest{
+            width: 25%;
+        }
+        span{
+            font-size: 12px;
+        }
+        ul li{
+            font-size: 10px;
+        }
+        .buttonSearch{
+            position: relative;
+            width: 10px;
+            button{
+                font-size: 10px;
+            }
+        }
+    }
 }

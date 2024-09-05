@@ -55,3 +55,32 @@
     width: 41px;
     height: 30px;
 }
+@media (max-width: 375px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .logo{
+        position: relative;
+        left: 0;
+    }
+    .search-bar{
+        width: auto;
+        border-radius: 16px;
+        .country{
+            display: none;
+            border-radius: 16px;
+
+        }
+        .numberPeople{
+            display: none;
+            border-radius: 16px;
+        }
+        button{
+            border-radius: 16px;
+            position: absolute;
+            top: 0;
+        }
+    }
+}

@@ -11,7 +11,7 @@ main {
 .stay-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 .stay-item {
@@ -19,6 +19,12 @@ main {
     background-color: #fff;
     border: none; 
     overflow: hidden;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+      }
 }
 
 .stay-item img {
@@ -28,21 +34,23 @@ main {
     object-fit: cover;
     object-position: center; 
 }
+
 .smallPicture{
     position: relative;
     width: auto;
-    img{
+    img {
         width: full;
         height: 9rem;
     }
 }
 
 .stay-info {
-    padding: 10px 0px 10px 0px;
+    padding: 10px 4px 10px 4px;
     display: flex;
     justify-content: space-between;
 }
-.rating img{
+
+.rating img {
     position: relative;
     width: 15px;
     height: 15px;
@@ -51,17 +59,22 @@ main {
     margin-right: 5px;
 }
 
-.stay-info .text{
+.stay-info .text {
     color: #828282;
     padding: 6px 0px 6px 0px;
     font-size: 14px;
 }
-.stay-info p{
+
+.stay-info p {
     color: #333333;
 }
-.description{
+
+.description {
     font-size: 16px;
+    margin-bottom: 1rem;
+    padding: 0px 4px 0px 4px;
 }
+
 .super-host {
     font-weight: bold;
     color: #4F4F4F;
@@ -69,6 +82,7 @@ main {
     border-radius: 10px;
     padding: 6px 6px 6px 6px;
     font-size: 12px;
+    height: max-content;
 }
 
 .rating {
@@ -81,5 +95,16 @@ main {
     color: #ff0000;
     font-weight: bold;
     margin-top: 20px;
-  }
-  
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .stay-item {
+        width: 100%; 
+        .smallPicture{
+            img{
+                height: 15rem;
+            }
+        }
+    }
+}

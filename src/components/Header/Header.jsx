@@ -38,7 +38,7 @@ export default function Header({ setShowModals, search, setSearch, resetFilter, 
           onClick={handleGuestsInputClick}
           readOnly
         />
-        <button>
+        <button onClick={handleGuestsInputClick}>
           <img src="/svg/search.svg" alt="search SVG" />
         </button>
       </div>

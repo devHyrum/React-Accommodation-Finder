@@ -79,7 +79,7 @@ export default function Modal({
   return (
     <div className="modal" onClick={closeModal}>
       <div className="header-modal">
-        <div className={`modal-content ${showLocationOptions ? 'active-border' : ''}`}>
+        <div id="modalCompleteLocation" className={`modal-content ${showLocationOptions ? 'active-border' : ''}`}>
           <span className='tittles-input'>LOCATION</span>
           <input
             type="text"
@@ -101,7 +101,7 @@ export default function Modal({
             </ul>
           )}
         </div>
-        <div className={`modal-content ${showGuestOptions ? 'active-border' : ''}`}>
+        <div id="modalCompleteGuest" className={`modal-content ${showGuestOptions ? 'active-border' : ''}`}>
           <span className='tittles-input'>GUESTS</span>
           <input
             type="text"
