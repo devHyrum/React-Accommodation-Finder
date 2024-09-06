@@ -1,7 +1,7 @@
 # React Accommodation Finder
 ![alt text](</public/demo/Demostración.gif>)
 ## Descripción
-Este proyecto es una aplicación de búsqueda de alojamientos desarrollada con React. Permite a los usuarios buscar alojamientos por ciudad y número de huéspedes, mostrando una lista de resultados compatibles. Si no se encuentran resultados, se muestra un mensaje adecuado.
+Este proyecto es una aplicación de búsqueda de alojamientos desarrollada con React. Permite a los usuarios buscar alojamientos por ciudad y número de huéspedes, mostrando una lista de resultados compatibles. Si no se encuentran resultados, se muestra un mensaje adecuado. Design fue extraído de **[Figma](https://www.figma.com/design/KGNH8dbclXT1vzXLyPrBeu/Windbnb?node-id=0-1&node-type=CANVAS&t=gULjaMe8urhz2qWy-0)**
 
 ## Características
 
@@ -18,6 +18,7 @@ Este proyecto es una aplicación de búsqueda de alojamientos desarrollada con R
 - Font Awesome
 - Google Fonts
 - Vercel
+- Figma
 
 ## Instalación
 
