@@ -168,7 +168,7 @@
 }
 @media (max-width: 639px) {
     .header-modal{
-        height: 60%;
+        height: 40%;
         #modalCompleteLocation{
             width: 35%;
         }
